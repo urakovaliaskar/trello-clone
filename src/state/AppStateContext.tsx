@@ -54,11 +54,6 @@ export const AppStateProvider = withInitialState<AppStateProviderProps>(
 		};
 
 		useEffect(() => {
-			console.log(state);
-		}, []);
-
-		useEffect(() => {
-			console.log(state);
 			save(state);
 		}, [state]);
 
